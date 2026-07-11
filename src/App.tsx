@@ -1,3 +1,6 @@
+import { RouterProvider } from "@tanstack/react-router";
+import { router } from "./router";
+
 export default function App() {
-  return <div className="text-indigo-700">App</div>;
+  return <RouterProvider router={router} />;
 }
