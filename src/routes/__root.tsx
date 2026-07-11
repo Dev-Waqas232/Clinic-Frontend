@@ -2,13 +2,15 @@ import * as React from "react";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
 
 export const Route = createRootRoute({
-  component: RootComponent,
+  component: RootLayout,
 });
 
-function RootComponent() {
+function RootLayout() {
   return (
     <React.Fragment>
-      <Outlet />
+      <div className="min-h-screen">
+        <Outlet />
+      </div>
     </React.Fragment>
   );
 }
